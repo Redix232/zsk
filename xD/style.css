@@ -1,0 +1,150 @@
+body{
+    font-family: Gill Sans, sans-serif;
+}
+
+header{
+    background-color: skyblue;
+    height: 100px;
+    width: 100%;
+    
+}
+ol {
+        list-style-type:none;
+        padding:30px;
+        margin:0;
+        font-size:24px;
+        height:60px;
+        line-height:30px;
+        text-align:center;
+        display: flex;
+        text-transform: uppercase;
+        justify-content: space-between;
+        
+      }
+
+    
+      ol li a {
+        display:block;
+        text-decoration:none;
+        color:#000;}
+
+     
+      ol li {
+        float:left;
+        width:200px;
+         
+}
+
+      ol li:hover ul {
+        display:block;
+      }
+
+    
+      ol li ul {
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      
+      }
+ ol li ul li {
+        position:relative;
+        background-color:skyblue;
+        border-width: 3px;
+          border-style: outset;
+      }
+
+     
+      ol li ul li:hover {
+        background-color:#DDD;
+           border-width: 3px;
+          border-style: inset;
+      }
+
+
+a {
+    text-decoration: none;
+}
+nav {
+    background-color: aqua;
+    width: 19%;
+    height: 400px;
+    float: left;
+}
+section{
+    background-color: aliceblue;
+    width: 60%;
+    height: 450px;
+    float: left;
+}
+/*
+#fiszka{
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    position: relative;
+}
+*/
+.fiszka{
+    width:200px;
+    cursor: pointer;
+    height:100px;
+    margin: 10px;
+    background-color: azure;
+    position: relative;
+    float: left;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    font-size: 200%;
+   font-weight: 600;
+ 
+}
+.pfiszka
+{
+  word-break: break-all;
+    
+}
+img{
+    width: 40px;
+    margin-left: 10px;
+   cursor: pointer;
+    
+}
+
+ aside {
+    background-color: aqua;
+    width: 19%;
+    height: 400px;
+    float: left;
+     border-radius: 15%;
+     border: solid 10px black;
+     margin: 1%;
+    
+} 
+#aside{
+    font-size: 40px;
+    list-style-type: none;
+    margin-left: -40px;
+   text-align: center;
+    font-weight: 800;
+}
+#hr {
+     border-top: 20px dotted black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
