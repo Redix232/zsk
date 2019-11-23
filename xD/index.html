@@ -1,61 +1,128 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<title>Projekt</title>
+    <meta charset="utf-8">
+    <title>Projekt</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+ 
 <body>
-    <header>
-    <ol>
-        <li><a href="index.html">Start</a>
-         <ul>
-                <li><a href="index.html"></a>lol</li>
-                <li>lol</li>
-                <li>lo</li>
-            </ul>
-        </li>
-        <li><a href="index.html">Egzamin</a>
-            <ul>
-                <li>e12</li>
-                <li>e13</li>
-                <li>e14</li>
-            </ul>
-            </li>
-        <li><a href="index.html">Start</a></li>
-        <li><a href="index.html">Słowniczek</a></li>
-        <li><a href="index.html">O mnie</a></li>
-    </ol>
-    </header>
-    <nav>lol</nav>
-    <section>
-  
-    <br>
-        <img alt="umiem" src="obrazki/umiem.svg" id="umiem" >
-        <img alt="nieumiem" src="obrazki/nieumiem.svg" >
-        <img alt="revers" src="obrazki/revers.svg" id="revers">
-    <br>
-    <form>
-    <input type="number" id="ileDiv"> 
-    
-</form>
-<input type="submit"  onclick="ile()">
+    <div id="logowanie">
+        <form id="log">
+            <fieldset>
+                <legend>Logowanie</legend>
+          
+            <h2>Panel logowania </h2>
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" name="username">
+<label for="password">Hasło:</label>
+<p><a href="#">Zapomniałeś hasła?</a></p>
+<input type="password" id="password" name="password">
 
-        <div id="fiszka" >
-  
+<input type="checkbox"><label class="check" for="checkbox">Zapamiętaj mnie!</label>
+<input type="submit" value="Login">
+</fieldset>
+        </form>
+    </div>   
+<div id="blure">
+
+
+    <header>
+        <ol id="ol">
+            <li id="li"><a href="index.html"><img alt="menu" src="obrazki/home.svg"></a></li>
+            <li id="li"><a href="index.html">Egzamin</a> </li>
+            <li id="li"><a href="index.html">Słowniczek</a></li>
+            <li id="li"><a href="index.html">O mnie</a></li>
+            <li id="li"><img alt="login" src="obrazki/login.svg" id="login"></a></li>
+        </ol>
+    </header>
+
+<nav>
+    <h2>FISZKI</h2>
+    <hr id="hr">
+    <p class="option" id="create">Stwórz zestaw </p>
+    <p class="option" id="create2">Gotowe zestawy</p>
+    <p class="option">Klasa</p>
+</nav>
+    
+<section>
+    <div id="se1" class="zmienny">
+        <div id="fiszka">
+        </div>
     </div>
-    </section>
-    <aside>
-    <ul id="aside">
-                <li>e12</li>
-                <li>e13</li>
-                <li>e14</li>
-            </ul>
+    <div id="se2" class="zmienny hide" >
+        <div class="flex-area">
+            <div class="div-area">
+                <textarea class="textarea" placeholder="wpisz słowo" cols="40" rows="2" id="slowo" ></textarea> 
+                
+            </div>
+            
+            <div class="div-area">
+                <textarea class="textarea" cols="40" placeholder="wpisz tłumaczenie" id="tlumaczenie" ></textarea>
+            </div> 
+        </div>
+       
+        <ol id="lista">
+            <li class="lista">lol</li>
+        </ol>
+    </div>
+</section>
+
+<aside>
+    <div class="aside" id="as1">
+         <ul id="aside">
+                
+            <img alt="umiem" src="obrazki/umiem.svg" id="umiem" >
+            <hr id="hr">
+            <img alt="nieumiem" src="obrazki/nieumiem.svg" >
+            <hr id="hr">
+            <img alt="revers" src="obrazki/revers.svg" id="revers">
+        </ul>
         <hr id="hr">
-    </aside>
-    <script src="script.js"></script>
+     
+      <table class="zmienny">
+          <tr >
+              <th id="ez">EASY</th>
+              <th id="normal">NORMAL</th>
+              <th id="hard">HARD</th>
+          </tr>
+       
+      </table>
+   
+        <hr id="hr">
+    </div>
+
+    <div class="aside hide" id="as2">
+        <ul id="aside">
+            <img alt="plus" src="obrazki/plus.svg" id="plus" >
+            <hr id="hr">
+            <img alt="minus" src="obrazki/minus.svg" id="minus">
+            <hr id="hr">
+            <select id="jezyk">
+                <option>Angielski</option>
+                <option>Niemiecki</option>
+            </select>
+            
+        </ul>
+    </div>
+</aside>
+    
+
+<footer>
+    <p id="footer">Create by Mateusz Wiemann</p>
+</footer>
+</div>
+<script src="wyswietlaniefiszek.js"></script>
+<script src="stworz_zestaw.js"></script>
+<script src="login.js"></script>
+
+<script type="text/javascript">
+    window.onbeforeunload = function() {
+       
+    }
+</script>
+
 </body> 
 </html>
