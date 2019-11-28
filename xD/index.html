@@ -2,6 +2,10 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Mateusz Wiemann">
+
     <title>Projekt</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -10,41 +14,69 @@
  
 <body>
     <div id="logowanie">
-        <form id="log">
-            <fieldset>
-                <legend>Logowanie</legend>
-          
-            <h2>Panel logowania </h2>
-            <label for="username">Nazwa użytkownika:</label>
-            <input type="text" id="username" name="username">
-<label for="password">Hasło:</label>
-<p><a href="#">Zapomniałeś hasła?</a></p>
-<input type="password" id="password" name="password">
+    
 
-<input type="checkbox"><label class="check" for="checkbox">Zapamiętaj mnie!</label>
-<input type="submit" value="Login">
-</fieldset>
-        </form>
-    </div>   
+    <form id="logform" method="POST">
+    <label for="username">Nazwa użytkownika:</label>
+    <input type="text" class="log" name="username">
+    <label for="password">Hasło:</label>
+    <input type="password" class="log" name="password">
+    <div id="lower">
+    <input type="checkbox"><label class="check" for="checkbox">Zapamiętaj mnie!</label>
+    <span><a href="#" id="rejestracja">Zarejestruj się!</a></span>
+    <input type="submit" value="Login">
+    
+    </div>
+    </form>
+    <form  id="rejform" method="POST">
+        <label for="username">Nazwa użytkownika:</label>
+        <input type="text" class="log" name="username">
+        <label for="mail">Mail:</label>
+        <input type="text" class="log" name="mail">
+        <label for="password">Hasło:</label>
+        <input type="password" class="log" name="password">
+        <label for="password">Powtórz Hasło:</label>
+        <input type="password" class="log" name="password">
+        <div id="lower">
+        <span><a href="#" id="logg">Logowanie!</a></span>
+        <input type="submit" value="Zarejestruj" id="subrej">
+        
+        </div>
+    </form>
+    </div>
+    
+  
 <div id="blure">
 
 
     <header>
         <ol id="ol">
-            <li id="li"><a href="index.html"><img alt="menu" src="obrazki/home.svg"></a></li>
-            <li id="li"><a href="index.html">Egzamin</a> </li>
+            <li id="li"><a href="index.html"><img alt="menu" src="obrazki/home2.svg"></a></li>
             <li id="li"><a href="index.html">Słowniczek</a></li>
-            <li id="li"><a href="index.html">O mnie</a></li>
+            <li id="li"><a href="o_mnie.html">O mnie</a></li>
             <li id="li"><img alt="login" src="obrazki/login.svg" id="login"></a></li>
         </ol>
     </header>
 
 <nav>
-    <h2>FISZKI</h2>
-    <hr id="hr">
-    <p class="option" id="create">Stwórz zestaw </p>
-    <p class="option" id="create2">Gotowe zestawy</p>
-    <p class="option">Klasa</p>
+    <div id="flex">
+    <div class="flex-child"> <h2 id="h2">FISZKI</h2>
+        <hr class="hr">
+    </div>
+   
+    <div class="flex-child"> <p class="option" id="create">Stwórz zestaw </p>
+        <hr class="hr">
+    </div>
+    
+    <div class="flex-child"><p class="option" id="create2">Gotowe zestawy</p>
+        <hr class="hr">
+    </div>
+  
+   <div class="flex-child"> <p class="option" id="create3">Zestawy</p>
+    <hr class="hr">
+</div>
+   
+</div>
 </nav>
     
 <section>
@@ -55,32 +87,35 @@
     <div id="se2" class="zmienny hide" >
         <div class="flex-area">
             <div class="div-area">
-                <textarea class="textarea" placeholder="wpisz słowo" cols="40" rows="2" id="slowo" ></textarea> 
+                <textarea class="textarea" placeholder="wpisz słowo" id="slowo" ></textarea> 
                 
             </div>
             
             <div class="div-area">
-                <textarea class="textarea" cols="40" placeholder="wpisz tłumaczenie" id="tlumaczenie" ></textarea>
+                <textarea class="textarea"  placeholder="wpisz tłumaczenie" id="tlumaczenie" ></textarea>
             </div> 
         </div>
        
         <ol id="lista">
-            <li class="lista">lol</li>
+           
         </ol>
+    </div>
+    <div id="se3" class="zmienny hide">
+        <p>coś tu będzie</p>
     </div>
 </section>
 
 <aside>
-    <div class="aside" id="as1">
-         <ul id="aside">
+    <div  id="as1">
+         <ul class="aside">
                 
             <img alt="umiem" src="obrazki/umiem.svg" id="umiem" >
-            <hr id="hr">
+            <hr class="hr">
             <img alt="nieumiem" src="obrazki/nieumiem.svg" >
-            <hr id="hr">
+            <hr class="hr">
             <img alt="revers" src="obrazki/revers.svg" id="revers">
         </ul>
-        <hr id="hr">
+        <hr class="hr">
      
       <table class="zmienny">
           <tr >
@@ -90,23 +125,62 @@
           </tr>
        
       </table>
-   
-        <hr id="hr">
+      
+        <hr class="hr">
+        
     </div>
 
-    <div class="aside hide" id="as2">
-        <ul id="aside">
+    <div class="hide" id="as2">
+        <div id="flex" > 
+                <ul class="aside">
+                <div class="flex-child" > 
             <img alt="plus" src="obrazki/plus.svg" id="plus" >
-            <hr id="hr">
+            <hr class="hr">
+        </div>
+        <div class="flex-child"> 
             <img alt="minus" src="obrazki/minus.svg" id="minus">
-            <hr id="hr">
+            <hr class="hr">
+        </div>
+            <div class="flex-child"> 
             <select id="jezyk">
                 <option>Angielski</option>
                 <option>Niemiecki</option>
             </select>
-            
-        </ul>
+            <hr class="hr">
+        </div>
+            <div class="flex-child"> 
+            <button id="stw">Stwórz</button>
+        <hr class="hr">
     </div>
+    </ul>
+    </div>
+    </div>
+    <div class="hide" id="as3">
+            <div id="flex">
+                    <div class="flex-child"> <h2 id="h2">Zestawy</h2>
+                        <hr class="hr">
+                    </div>
+                   
+                    <div class="flex-child" id="div-zestaw"> 
+                        <ol id="zestaw">
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                            <li class="zestaw"><p>Zwierzęta</p></li>
+                         
+                      
+                        </ol>
+                        <hr class="hr">
+                    
+    </div>
+   
+</div>
 </aside>
     
 
@@ -114,15 +188,10 @@
     <p id="footer">Create by Mateusz Wiemann</p>
 </footer>
 </div>
-<script src="wyswietlaniefiszek.js"></script>
-<script src="stworz_zestaw.js"></script>
-<script src="login.js"></script>
+<script src="JS/wyswietlaniefiszek.js"></script>
+<script src="JS/stworz_zestaw.js"></script>
+<script src="JS/login.js"></script>
 
-<script type="text/javascript">
-    window.onbeforeunload = function() {
-       
-    }
-</script>
 
 </body> 
 </html>
